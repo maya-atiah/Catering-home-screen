@@ -1,0 +1,14 @@
+.hero-container{
+    background-image: url('../Assests/heroImage.png');
+    background-size: cover;  
+    background-repeat: round;
+    height:53rem;
+    opacity:1;
+}
+
+
+@media screen and (max-width:900px){
+    .hero-container {
+    height: 23rem;
+}
+}

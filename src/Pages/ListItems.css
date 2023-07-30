@@ -1,0 +1,129 @@
+.menu {
+    list-style: none;
+    margin-top: 5rem;
+    max-width: 800px;
+}
+
+.menu-item {
+    /* border: 1px solid #ccc; */
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1rem;
+    margin-bottom: 5px;
+}
+
+.menu-item.active {
+    margin-bottom: 30px;
+    /* Set a larger margin for active (expanded) item */
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.arrow {
+    margin-left: 5px;
+    font-size: 2px;
+}
+
+.left-arrow-details {
+    height: 32px;
+    width: 32px;
+
+}
+
+
+.details {
+    display: none;
+    padding: 10px;
+    /* border-top: 1px solid #ccc; */
+}
+
+.menu-item.active .details {
+    display: block;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s, transform 0.3s;
+    /* Add transitions for opacity and transform */
+    z-index: 10000;
+}
+
+.menu-item:hover .popup {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+
+}
+
+.catering-image {
+    max-width: 100%;
+}
+
+body.black-background {
+    background-color: rgba(0, 0, 0, 0.136);
+    ;
+}
+
+.popup-inner {
+    position: relative;
+    padding: 10px;
+    border-radius: 20px;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.left-arrow-details {
+    height: 32px;
+    width: 32px;
+    transition: transform 0.3s;
+}
+
+.menu-item:hover .left-arrow-details {
+    transform: rotate(90deg);
+}
+
+
+@media screen and (max-width: 897px) {
+
+    .menu {
+        margin-top: 1rem;
+    }
+
+    .popup {
+        display: none;
+
+    }
+
+    body.black-background {
+        background-color: white;
+    }
+
+}

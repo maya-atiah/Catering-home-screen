@@ -1,0 +1,64 @@
+.navhead-container {
+    background-color: #054877;
+    padding: 1rem 8rem 1rem 8rem;
+    height: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+   
+
+}
+
+.logo-class {
+
+    width: 80px;
+    height: 80px;
+
+}
+
+.nav-mobile {
+    display: none;
+}
+@media screen and (max-width:1393px) {
+    .Navbar-container {
+
+        gap: 10rem;
+
+    }
+
+    .navhead-container {
+
+        padding: 1rem 4rem 1rem 4rem;
+
+    }
+
+    .menu-navbar {
+
+        gap: 4rem;
+
+    }
+}
+
+
+@media screen and (max-width: 995px) {
+    .Navbar-container {
+        gap: 5rem;
+    }
+}
+@media screen and (max-width: 900px) {
+  .nav-mobile{
+    display: block;
+  }
+  .navbar-desktop{
+    display: none   ;
+  }
+
+  .navhead-container {
+
+      padding: 1rem ;
+
+  }
+
+}

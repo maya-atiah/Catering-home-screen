@@ -1,0 +1,38 @@
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #131C24;
+    color: #707070;
+    padding: 4rem;
+    gap: 2rem;
+}
+
+.footer-menu div:hover {
+    color: #C0A241;
+    cursor: pointer;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem
+}
+
+.footer-container img {
+    width: 80px;
+    height: 80px
+}
+
+@media screen and (max-width: 897px) {
+
+    .footer-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem
+    }
+
+}

@@ -1,0 +1,29 @@
+.sidebar-container {
+    background-color: #c0a241;
+    width: 350px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -500px;
+    transition: left 0.3s ease;
+    padding: 2rem;
+    font-size: 20px;
+}
+
+.sidebar-container.open {
+    left: 0;
+}
+
+.sidebar-container div {
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.sidebar-container div:hover {
+    color: #054877;
+}
+
+.close-button:hover {
+    color: #054877;
+
+}

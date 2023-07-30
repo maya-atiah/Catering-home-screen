@@ -1,0 +1,45 @@
+.Navbar-container{
+    display: flex;
+    flex-direction: row;
+    gap:20rem;
+    align-items: center;
+
+}
+
+.sections-container{
+    display: flex;
+        flex-direction: row;
+        gap:5rem
+}
+
+.inquire-style{
+    border:1px solid #D8C678;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.menu-navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:8rem;
+    align-items: center;
+}
+
+.menu-icon{
+    font-size: 50px;
+    cursor: pointer;
+}
+.menu-icon:hover{
+    color: #D8C678;
+}
+.sections-container div:hover{
+    color:#D8C678;
+    cursor: pointer;
+}
+
+.inquire-style:hover{
+color:#054877;
+cursor: pointer;
+background-color:#D8C678;
+}
