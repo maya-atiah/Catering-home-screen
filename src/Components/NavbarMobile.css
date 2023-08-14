@@ -28,7 +28,9 @@ font-size: 30px;
     color: white;
 
 }
-
+.one div{
+    color: aliceblue;
+}
 .one {
     padding: 0.6rem;
 }
@@ -41,18 +43,20 @@ font-size: 30px;
 }
 
 .navbar-mobile-container {
-    margin-right: 0.2rem;
-    background-color: transparent;
-    left: 0;
-    right: 0;
-    top: 8rem;
-    transition: 0.2s;
-    text-align: center;
-    position: absolute;
-    transition: 0.8s;
-    z-index: 10000;
+    width:99%;
+        margin-right: 0.2rem;
+        background-color: transparent;
+        /* right: 100px; */
+        top: 130px;
+        text-align: center;
+        position: fixed;
+        left: -1000px;
+        transition: left 0.8s ease;
+        z-index: 10000;
 
-
+}
+.navbar-mobile-container.open {
+    left: 2px;
 }
 
 
